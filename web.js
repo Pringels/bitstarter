@@ -8,7 +8,7 @@ app.use(express.logger());
 app.get('/', function(request, response) {
   //response.send('Hello World4!');
   
-  var buffer = new Buffer(fs.readFileSync(index.html));
+  var buffer = new Buffer(fs.readFileSync("index.html"));
   buffer.toString();
   response.send(buffer);
 });
